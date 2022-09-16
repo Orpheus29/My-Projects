@@ -1,0 +1,50 @@
+body {
+    width: 360px;
+    margin: 20px auto;
+}
+
+p {
+    text-align: right;
+}
+
+fieldset {
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-stretch: narrower; */
+    font-size: small;
+    border: none;
+    border-top: lightgray solid 1px;
+    padding-inline-start: 30px;
+    padding-inline-end: 30px;
+}
+
+legend {
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+    font-weight: bold;
+    color: #6c6ccf;
+}
+
+input,
+select {
+    margin-left: 30px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+
+input {
+    width: 150px;
+}
+
+select {
+    width: 156px;
+    padding: 2px;
+    appearance: none;
+    background: url('icons-down-arrow.png') no-repeat right;
+    background-size: contain;
+}
+
+span {
+    font-weight: bold;
+}

@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    color: #383838;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1145px;
+}
+
+/* COMMON END */
+/* ------------------------------------------- */
+
+
+/* HEADER START */
+
+header {
+    background-color: #BEB7D8;
+    user-select: none;
+}
+
+.main-top {
+    padding: 24.5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+    height: 35px;
+}
+
+.burger {
+    display: none;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+}
+
+.contacts a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #383838;
+}
+
+.icon {
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    margin-right: 30px;
+}
+
+.phone {
+    background-image: url('images/icons/phone\ icon.svg');
+}
+
+.skype {
+    background-image: url('images/icons/Skype\ icon.svg');
+}
+
+.tg {
+    background-image: url('images/icons/telegram\ icon.svg');
+}
+
+.btn {
+    width: 160px;
+    height: 40px;
+    border: none;
+    font-size: 12px;
+    background-color: #006BA7;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.callback {
+    width: 180px;
+}
+
+/* ---------------- */
+
+/* MAIN START */
+
+/* SECTION 1 START */
+
+h1 {
+    font-size: 36px;
+    color: #006BA7;
+    margin-bottom: 6px;
+    line-height: 48px;
+}
+
+.title {
+    text-align: center;
+    font-size: 18px;
+    padding: 90px 0;
+    background-image: url('images/laptop\ 1.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.buttons button {
+    width: 160px;
+    margin: 0 13px;
+}
+
+.buttons {
+    margin-top: 50px;
+    user-select: none;
+}
+
+/* ---------------------- */
+
+/* SECTION 2 START */
+
+.second-section {
+    margin-top: 64px;
+    background-color: #BEB7D8;
+    padding: 72px 0 30px;
+}
+
+.infos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.info {
+    width: 335px;
+    font-size: 14px;
+    line-height: 18.5px;
+    margin-bottom: 10px;
+}
+
+b {
+    display: block;
+}
+
+/* -------------- */
+
+/* FOOTER START */
+
+footer {
+    background-color: #383838;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    padding: 13px 0;
+}
+
+
+
+/* ----------TABLET--------------- */
+
+@media (max-width: 991px) {
+    .main-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .title {
+        background-position: 110% 120%;
+        padding: 30px 0;
+    }
+
+    .second-section {
+        margin-top: 0;
+        padding: 15px 0;
+    }
+}
+
+/* ----------CELL------------- */
+
+@media (max-width: 767px) {
+
+    .contacts {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .icon {
+        margin: 2px 0;
+    }
+
+    .callback {
+        margin-top: 14px;
+    }
+
+    .title {
+        background-position: 130% 0%;
+        padding: 30px 0;
+    }
+
+    .second-section {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 37px;
+        margin-top: 0;
+    }
+
+    .buttons {
+        margin-top: 34px;
+    }
+
+    .buttons button {
+        margin-top: 13px;
+    }
+
+    .info {
+        min-height: auto;
+        padding: 5px;
+    }
+
+    footer p {
+        font-size: 10px;
+        line-height: 13.3px;
+        padding: 6px;
+    }
+
+    .burger {
+        display: block;
+        margin-bottom: 10px;
+        width: 50px;
+        height: 50px;
+        border: 2px solid #fff;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .burger span {
+        width: 34px;
+        height: 3px;
+        background-color: #fff;
+        display: block;
+        position: relative;
+    }
+
+    .burger span::before,
+    .burger span::after {
+        content: '';
+        width: 34px;
+        height: 3px;
+        background-color: #fff;
+        display: block;
+        position: absolute;
+    }
+
+    .burger span::before {
+        top: -10px;
+    }
+
+    .burger span::after {
+        top: 10px;
+    }
+}
+
+@media (max-width: 670px) {
+
+    .title {
+        background-image: none;
+        position: relative;
+    }
+
+    .title::after {
+        content: "";
+        background-image: url(images/laptop\ 1.png);
+        background-repeat: no-repeat;
+        background-position: 130% 0%;
+        opacity: 0.2;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;   
+    }
+}
