@@ -5,6 +5,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: x-small;
     text-align: center;
+    position: fixed;
+    left: 50%;
+    /* top: 50%; Выводим в центре */
+    transform: translate(-50%);
+    /* transform: translate(-50%, -50%); Смещаем влево и вверх */
 }
 
 .main {
