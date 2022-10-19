@@ -3,14 +3,17 @@
 
 ***
 ### Online Zoo
+adapted for 320, 640, 1000, 1600 px
 https://orpheus29.github.io/My-Projects/1%20Online%20Zoo/pages/main
 ***
 
 ### Aggressive Kiddos
+not adapted yet
 https://orpheus29.github.io/My-Projects/2%20Aggressive%20Kiddos/   
 ***
 
 ### CyberBionic landing
+rubber layout
 https://orpheus29.github.io/My-Projects/3%20CyberBionic%20landing/CyberBionic%20landing.html
 ***
  
